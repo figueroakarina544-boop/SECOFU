@@ -29,9 +29,12 @@ body{
 
 /**NAVBAR*/
 /* =============================== */
-.navbar{
-    background-color:var(--color-light);
-    height: 80px;
+.navbar {
+  background-color: var(--color-light);
+  /* height: 80px;  <- Eliminar o comentar esta línea */
+  padding-top: 1.5rem; /* Añadir padding superior */
+  padding-bottom: 1.5rem; /* Añadir padding inferior */
+  /* O usar la abreviatura: padding: 1.5rem 0; */
 } 
 .navbar-brand img{
     height: 50px; 
@@ -854,17 +857,22 @@ background:var(--color-light);
     justify-content: center !important;
   }
 
-   .navbar{
-        padding: 10px 20px;
-    }
-
+  .navbar{
+    background-color: var(--color-light);
+    min-height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
     .navbar-brand img{
         height: 45px;
     }
 
     .navbar-toggler{
-        margin-right: 5px;
-    }
+    border: none;
+    font-size: 1.5rem;
+    padding: 6px 10px;
+}
     .navbar-collapse{
         background-color: var(--color-light);
         border-radius: 10px;
