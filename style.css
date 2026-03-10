@@ -797,9 +797,8 @@ background:var(--color-light);
     .boton-clasico{
         display: none;
     }
-       .navbar-toggler{
-        margin-right: 5px;
-    }
+     
+
    .hero-section .carousel-item img{
         height: 65vh;
         object-fit: cover;
@@ -854,4 +853,42 @@ background:var(--color-light);
     gap: 10px;
     justify-content: center !important;
   }
+
+   .navbar{
+        padding: 10px 20px;
+    }
+
+    .navbar-brand img{
+        height: 45px;
+    }
+
+    .navbar-toggler{
+        margin-right: 5px;
+    }
+    .navbar-collapse{
+        background-color: var(--color-light);
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        animation: menuFade 0.3s ease;
+    }
+
+    .navbar .nav-link{
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+}
+/* animación suave del menú */
+@keyframes menuFade{
+    from{
+        opacity:0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
 }
